@@ -6,7 +6,7 @@ opacity: 0.75;
 }
 
 
-#bcolor1, #bcolor2{
+.b-color {
     background-color:#CD6600;
     opacity: 0.75;
     color: black;
