@@ -5,6 +5,10 @@ background-repeat: no-repeat;
 opacity: 0.75;
 }
 
+body {
+    background-color: antiquewhite;
+}
+
 .b-color-box {
     background-color:#CD6600;
     opacity: 0.75;
@@ -14,6 +18,11 @@ opacity: 0.75;
 h2 {
     color: black;
 }
+
+main {
+    min-width: 50%;
+}
+
 .container {
     display: flex; 
     width: 100%; 
