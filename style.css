@@ -1,0 +1,26 @@
+#background {
+background-image: url(back.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+opacity: 0.75;
+}
+
+
+#bcolor1, #bcolor2{
+    background-color:#CD6600;
+    opacity: 0.75;
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+.container {
+    display: flex; 
+    width: 100%; 
+  }
+  
+  .column {
+    flex: 1; 
+  }
+  
