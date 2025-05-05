@@ -1,7 +1,6 @@
 #background {
 background-image: url(back.jpg);
-background-size: contain;
-background-repeat: no-repeat;
+background-size: cover;
 opacity: 0.75;
 }
 
