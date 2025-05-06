@@ -8,24 +8,30 @@ const numOfPeopleElm = document.getElementById("total-people");
 const totalSplitElm = document.getElementById("total-split-amount");
 const splitBtn = document.getElementById("split-btn");
 
-// tipBtn.addEventListener("click", handleCalculateTip);
+tipBtn.addEventListener("click", handleCalculateTip);
 
-// function handleCalculateTip(event) {
-//   event.preventDefault();
-//   let input1 = billAmountTipElm;
-//   let input2 = tipPercentElm;
-//   if (!isNaN(billAmountTipElm) && !isNaN(tipPercentElm)) {
-//   }
- 
-//   event.target.reset();
-// }
+function handleCalculateTip(event) {
+  event.preventDefault();
+  let input1 = parseFloat(billAmountTipElm.value); //so input will register decimal numbers
+  let input2 = tipPercentElm.value;
+  //to make sure both inputs are numbers
+  if (!isNaN(input1) && !isNaN(input2)) {
+    totalTipElm.textContent = input1 * input2;
+  } else {
+    totalTipElm.textContent = "Please enter a numeric value";
+  }
+
+  event.target.reset();
+}
 
 splitBtn.addEventListener("click", handleCalculateSplit);
 
 function handleCalculateSplit(event) {
   event.preventDefault();
-  let input1 = parseFloat(billAmountSplitElm.value);
-  let input2 = parseInt(numOfPeopleElm.value);
+  let input1 = parseFloat(billAmountSplitElm.value); //so input will register decimal numbers
+  let input2 = parseInt(numOfPeopleElm.value); //so the input will only register whole numbers
+
+  //to make sure both inputs are numbers
   if (!isNaN(input1) && !isNaN(input2)) {
     totalSplitElm.textContent = input1 / input2;
   } else {
