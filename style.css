@@ -1,36 +1,52 @@
 #background {
-background-image: url(back.jpg);
-background-size: cover;
-opacity: 0.75;
+  background-image: url(back.jpg);
+  background-size: cover;
+  opacity: 0.75;
 }
 
 body {
-    background-color: #CD6600;
+  background-color: #cd6600;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-weight: 100px;
+}
+
+p {
+  font-weight: 1;
+}
+
+#header-circle {
+  margin: 100px;
 }
 
 .b-color-box {
-    background-color:#CD6600;
-    opacity: 0.75;
-    color: black;
+  background-color: #cd6600;
+  opacity: 0.75;
+  color: black;
 }
 
 h2 {
-    color: black;
+  color: black;
 }
 
 main {
-    min-width: 50%;
-    opacity: 0.90;
+  min-width: 50%;
+  opacity: 0.9;
 }
 
 .container {
-    display: flex; 
-    width: 100%; 
-  }
-  
-  .column {
-    flex: 1; 
-  }
+  display: flex;
+  width: 100%;
+}
 
+.column {
+  flex: 1;
+}
 
-  
+footer {
+  text-transform: lowercase;
+  letter-spacing: -1px;
+  text-decoration: underline overline;
+}

@@ -20,7 +20,6 @@ function handleCalculateTip(event) {
   } else {
     totalTipElm.textContent = "Please enter a numeric value";
   }
-
   event.target.reset();
 }
 
@@ -30,7 +29,6 @@ function handleCalculateSplit(event) {
   event.preventDefault();
   let input1 = parseFloat(billAmountSplitElm.value); //so input will register decimal numbers
   let input2 = parseInt(numOfPeopleElm.value); //so the input will only register whole numbers
-
   //to make sure both inputs are numbers
   if (!isNaN(input1) && !isNaN(input2)) {
     totalSplitElm.textContent = input1 / input2;
