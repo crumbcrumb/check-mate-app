@@ -18,7 +18,7 @@ function handleCalculateTip(event) {
   if (!isNaN(input1) && !isNaN(input2)) {
     totalTipElm.textContent = input1 * input2;
   } else {
-    totalTipElm.textContent = "Please enter a numeric value";
+    totalTipElm.textContent = "Please enter a valid number";
   }
   event.target.reset();
 }
@@ -33,7 +33,7 @@ function handleCalculateSplit(event) {
   if (!isNaN(input1) && !isNaN(input2)) {
     totalSplitElm.textContent = input1 / input2;
   } else {
-    totalSplitElm.textContent = "Please enter a numeric value";
+    totalSplitElm.textContent = "Please enter a valid number";
   }
   event.target.reset();
 }
