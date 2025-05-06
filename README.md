@@ -43,7 +43,7 @@ Katarina Andrews - [crumbcrumb](https://github.com/crumbcrumb)
 
 ## Credit
 
-- Background picture by [Adrien Olichon](https://unsplash.com/@adrienolichon?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/@adrienolichon?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Background image by [Adrien Olichon](https://unsplash.com/@adrienolichon?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/@adrienolichon?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 
 - Audio by [kiddpark](https://freesound.org/people/kiddpark/) on [Freesound](https://freesound.org/people/kiddpark/sounds/201159/)
   - License: [Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
