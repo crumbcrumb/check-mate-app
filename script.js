@@ -24,15 +24,12 @@ splitBtn.addEventListener("click", handleCalculateSplit);
 
 function handleCalculateSplit(event) {
   event.preventDefault();
-  let input1 = billAmountSplitElm.value;
-  let input2 = numOfPeopleElm.value;
-  if (!isNaN(billAmountSplitElm) && !isNaN(numOfPeopleElm)) {
+  let input1 = parseFloat(billAmountSplitElm.value);
+  let input2 = parseInt(numOfPeopleElm.value);
+  if (!isNaN(input1) && !isNaN(input2)) {
     totalSplitElm.textContent = input1 / input2;
   } else {
     totalSplitElm.textContent = "Please enter a numeric value";
   }
-
-  // let split = billAmountSplitElm / numOfPeopleElm
-  // totalSplitElm.textContent = `${split}`;
   event.target.reset();
 }
