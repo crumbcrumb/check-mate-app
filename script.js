@@ -18,11 +18,11 @@ function handleCalculateTip(event) {
   let input2 = tipPercentElm.value;
   //to make sure both inputs are numbers that are not zero and for audio to only play if those conditions are met
   if (!isNaN(input1) && input1 !== 0 && !isNaN(input2) && input2 !== 0) {
-    totalTipElm.textContent = input1 * input2;
+    totalTipElm.value = input1 * input2;
     audio.currentTime = 0;
     audio.play();
   } else {
-    totalTipElm.textContent = "Please enter a valid number";
+    totalTipElm.value = "Please enter a valid number";
   }
   event.target.reset();
 }
@@ -34,11 +34,11 @@ function handleCalculateSplit(event) {
   let input1 = parseFloat(billAmountSplitElm.value);
   let input2 = parseInt(numOfPeopleElm.value); //so the input will only register whole numbers
   if (!isNaN(input1) && input1 !== 0 && !isNaN(input2) && input2 !== 0) {
-    totalSplitElm.textContent = input1 / input2;
+    totalSplitElm.value = input1 / input2;
     audio.currentTime = 0;
     audio.play();
   } else {
-    totalSplitElm.textContent = "Please enter a valid number";
+    totalSplitElm.value = "Please enter a valid number";
   }
   event.target.reset();
 }
