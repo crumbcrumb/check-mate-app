@@ -17,7 +17,7 @@ function handleCalculateTip(event) {
   let input1 = parseFloat(billAmountTipElm.value); //so input will register decimal numbers
   let input2 = tipPercentElm.value;
   //to make sure both inputs are numbers that are not zero and for audio to only play if those conditions are met
-  if ((!isNaN(input1) && input1 !== 0) && (!isNaN(input2) && input2 !== 0)) {
+  if (!isNaN(input1) && input1 !== 0 && !isNaN(input2) && input2 !== 0) {
     totalTipElm.textContent = input1 * input2;
     audio.currentTime = 0;
     audio.play();
@@ -31,10 +31,9 @@ splitBtn.addEventListener("click", handleCalculateSplit);
 
 function handleCalculateSplit(event) {
   event.preventDefault();
-  let input1 = parseFloat(billAmountSplitElm.value); //so input will register decimal numbers
+  let input1 = parseFloat(billAmountSplitElm.value);
   let input2 = parseInt(numOfPeopleElm.value); //so the input will only register whole numbers
-  //to make sure both inputs are numbers that are not zero and for audio to only play if those conditions are met
-  if ((!isNaN(input1) && input1 !== 0) && (!isNaN(input2) && input2 !== 0)) {
+  if (!isNaN(input1) && input1 !== 0 && !isNaN(input2) && input2 !== 0) {
     totalSplitElm.textContent = input1 / input2;
     audio.currentTime = 0;
     audio.play();
