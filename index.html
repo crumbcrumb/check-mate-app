@@ -23,15 +23,15 @@
           </section>
         </div>
       </header>
-      <main>
+      <main class="ps-5">
         <div class="column">
           <section
             class="shadow p-5 mb-1 text-dark rounded b-color-box"
           >
             <h2 class="text-center">Calculate Tip</h2>
             <div class="input-group input-group-lg">
-              <span class="input-group-text" id="bill-amount-tip">$</span>
-              <input type="number" class="form-control" />
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" id="bill-amount-tip"/>
             </div>
             <br />
             <div class="form-floating">
@@ -50,10 +50,11 @@
 
             <hr />
             <div class="input-group input-group-lg">
-              <span class="input-group-text" id="total-tip-amount">$</span>
+              <span class="input-group-text">$</span>
               <input
                 type="number"
                 class="form-control"
+                id="total-tip-amount"
                 placeholder="Total"
                 readonly
               />
@@ -71,8 +72,8 @@
           >
             <h2 class="text-center">Split Bill</h2>
             <div class="input-group input-group-lg">
-              <span class="input-group-text" id="bill-amount-split">$</span>
-              <input type="number" class="form-control" />
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" id="bill-amount-split"/>
             </div>
             <br />
             <div class="form-floating mb-3">
@@ -80,7 +81,7 @@
                 type="number"
                 class="form-control"
                 id="total-people"
-                placeholder="Number of people"
+                placeholder="# of people"
               />
               <label for="floatingNumber"># of People </label>
             </div>

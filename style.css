@@ -5,7 +5,7 @@ opacity: 0.75;
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: #CD6600;
 }
 
 .b-color-box {
@@ -20,6 +20,7 @@ h2 {
 
 main {
     min-width: 50%;
+    opacity: 0.90;
 }
 
 .container {
@@ -30,4 +31,6 @@ main {
   .column {
     flex: 1; 
   }
+
+
   
