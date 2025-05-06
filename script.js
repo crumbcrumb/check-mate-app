@@ -8,6 +8,8 @@ const numOfPeopleElm = document.getElementById("total-people");
 const totalSplitElm = document.getElementById("total-split-amount");
 const splitBtn = document.getElementById("split-btn");
 
+const audio = new Audio("cash-register.mp3");
+
 tipBtn.addEventListener("click", handleCalculateTip);
 
 function handleCalculateTip(event) {
@@ -36,4 +38,20 @@ function handleCalculateSplit(event) {
     totalSplitElm.textContent = "Please enter a valid number";
   }
   event.target.reset();
+}
+
+//play audio when the btn is clicked
+tipBtn.addEventListener("click", handlePlayAudioTip);
+
+function handlePlayAudioTip(event) {
+  audio.currentTime = 0;
+  audio.play();
+}
+
+
+splitBtn.addEventListener("click", handlePlayAudioSplit);
+
+function handlePlayAudioSplit(event) {
+  audio.currentTime = 0;
+  audio.play();
 }
