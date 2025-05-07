@@ -21,6 +21,7 @@ function handleCalculateTip(event) {
     totalTipElm.value = input1 * input2;
     audio.currentTime = 0;
     audio.play();
+    audio.volume = 0.5;
   } else {
     totalTipElm.value = "Please enter a valid number";
   }
@@ -37,6 +38,7 @@ function handleCalculateSplit(event) {
     totalSplitElm.value = input1 / input2;
     audio.currentTime = 0;
     audio.play();
+    audio.volume = 0.5;
   } else {
     totalSplitElm.value = "Please enter a valid number";
   }
