@@ -17,7 +17,7 @@ function handleCalculateTip(event) {
   let input1 = parseFloat(billAmountTipElm.value); //so input will register decimal numbers
   let input2 = tipPercentElm.value;
   //to make sure both inputs are numbers that are not zero and for audio to only play if those conditions are met
-  if (!isNaN(input1) && input1 !== 0 && !isNaN(input2) && input2 !== 0 && input1 > 0) {
+  if (!isNaN(input1) && input1 !== 0 && !isNaN(input2) && input1 > 0) {
     totalTipElm.value = input1 * input2;
     audio.currentTime = 0;
     audio.play();
